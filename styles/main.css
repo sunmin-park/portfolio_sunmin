@@ -26,21 +26,21 @@ header span {
     display: block;
     margin: 0 auto;
 }
-.portfolio-title {
+.content .portfolio-title {
     font-size: 64px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 20px;
 }
-.subtext {
+.content .subtext {
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     line-height: 1.5;
     color: #555;
 }
-.subtext-kr {
-    margin-top: 5px;
-    font-size: 1.0rem;
+.content .subtext-kr {
+    margin-top: 20px;
+    font-size: 1.5rem;
     line-height: 1.5;
     color: #555;
 }
@@ -57,23 +57,24 @@ header span {
     align-items: flex-start;
     margin: 300px 70px;
 }
-.profile-left {
+.profile-container .profile-left {
     width: 30%;
     text-align: center;
 }
-.profile-left img {
+.profile-container  .profile-left img {
     width: 80%;
     height: auto;
     border-radius: 8px;
 }
-.profile-left .title {
-    margin-top: 20px;
+.profile-container .title {
+    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 24px;
     font-weight: bold;
     text-align: left;
     padding-left: 10px;
 }
-.profile-right {
+.profile-container .profile-right {
     width: 70%;
     padding-left: 30px;
 }
@@ -93,7 +94,7 @@ header span {
     margin-bottom: 5px;
 }
 .profile-right .skills {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 18px;
     display: flex;
     flex-wrap: wrap;
@@ -108,31 +109,31 @@ header span {
     background-color: #000;
     margin: 20px 0;
 }
-.licence-experience {
+.profile-container .licence-experience {
     display: flex;
     justify-content: space-between;
 }
-.licence-experience .licence, .experience {
-    width: 50%;
-    font-size: 16px;
+.profile-container .licence-experience .licence, .experience {
+    width: 900%;
+    font-size: 17px;
 }
-.licence-experience .licence h2, .experience h2 {
+.profile-container .licence-experience .licence h2, .experience h2 {
     margin-bottom: 10px;
     font-size: 20px;
 }
-.licence-experience .licence ul, .experience ul {
+.profile-container .licence-experience .licence ul, .experience ul {
     list-style: none;
     padding: 0;
 }
-.licence-experience .licence li, .experience li {
+.profile-container .licence-experience .licence li, .experience li {
     margin-bottom: 10px;
 }
-.licence-experience .skills-icons {
+.profile-container .licence-experience .skills-icons {
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
 }
-.licence-experience .skills-icons img {
+.profile-container .licence-experience .skills-icons img {
     width: 50px;
     height: 50px;
     margin-right: 15px;
@@ -143,22 +144,22 @@ header span {
     margin: 0 0;
 }
 /* web portfolio end */
-.container1 {
+.container_b {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
-.container1 .banner-title h1 {
+.container_b .banner-title h1 {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
     text-align: left;
     padding-left: 10px;
-    margin: 0 0 70px 30px;
+    margin: 0 0 70px 0;
 }
-.container1 .banner-title p {
+.container_b .banner-title p {
     font-size: 8em;
     font-weight: bold;
     margin: 0;
@@ -166,96 +167,199 @@ header span {
     position: relative;
     top: -20px;
 }
-.container1 .banner-grid {
+.container_b .banner-grid {
     display: grid;
-    background-color: aqua;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 40px;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin-top: 20px;
 }
-.container1 .banner-item {
-    background-color: #ccc;
-    height: 100px;
+.container_b .banner-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    color: #000;
+    justify-content: space-between;
     text-align: center;
 }
-.container1 .banner-item:nth-child(1), .banner-item:nth-child(2) {
+.container_b .banner-item img{
+    width: 100%;
+    height: auto;
+}
+.container_b .banner-item:nth-child(1), .banner-item:nth-child(2) {
     width: calc(100% - 20px);
 }
-.container1 .banner-item:nth-child(3), .banner-item:nth-child(4) {
+.container_b .banner-item:nth-child(3), .banner-item:nth-child(4) {
     width: calc(100% - 20px);
 }
 /* 6page end */
-.container2 {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sns-container {
+    width: 100%; height: 700px;
+    padding: 20px 0 20px 0;
+    text-align: left;
+    margin-left: 20px;
 }
-
-.container2 .title {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+.sns-container h1 {
+    margin-top: 20px;
+    font-size: 24px;
     font-weight: bold;
-    font-size: 1.2em;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0 20px 70px 0;
 }
-
-.container2 .sns-grid {
+.sns-container .sns-row {
     position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 210px;
 }
-
-.container2 .sns-item {
-    width: 200px;
-    height: 200px;
+.sns-container .sns-item {
     position: absolute;
+    display: block;
+    align-items: center;    
+    width: 380px;
+    height: 380px;
+    margin: 0 50px;
 }
-
-.container2 .sns-item1 {
-    background-color: #d9d9d9;
-    z-index: 1;
-    top: 40px;
-    left: 40px;
-}
-
-.container2 .sns-item2 {
-    background-color: #a6a6a6;
-    z-index: 2;
-    top: 60px;
-    left: 60px;
-}
-
-.container2 .sns-item3 {
-    background-color: #bfbfbf;
-    z-index: 3;
-    top: 80px;
-    left: 80px;
-}
-
-.container2 .sns-item4 {
-    background-color: #333;
-    z-index: 4;
-    top: 100px;
-    left: 100px;
-}
-
-
-
-
-
-
-.footer img{
+.sns-container .sns-item img {
     width: 100%;
-    margin: 0 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.sns-container .sns-item:hover img {
+    transform: scale(1.2);
+}
+.sns-container .sns-item:nth-child(1) {
+    z-index: 1;
+}
+.sns-container .sns-item:nth-child(2) {
+    position: absolute;
+    left: 430px;
+    z-index: 2;
+}
+.sns-container .sns-item:nth-child(3) {
+    position: absolute;
+    left: 850px;
+    z-index: 3;
+}
+.sns-container .sns-item:nth-child(4) {
+    position: absolute;
+    left: 1270px;
+    z-index: 4;
+}
+/* 7page end */
+.container01{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5e8;
+    padding: 20px 300px;
+}
+.container01 .left-section{
+    width: 50%; 
+}
+.container01 h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.container01 .title{
+    color: #ff6d6d;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 10px 20px;
+}
+.container01 .info{
+    font-size: 20px;
+    color: #6c7a89;
+    line-height: 1.6;
+}
+.container01 .info p{
+    display: block;
+    margin-left: 30px;
+}
+.container01 .right-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container01 .details {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+.container01 .details span {
+    display: block;
+    margin-bottom: 10px;
+}
+.right-section01 img{
+    width: 100%;
+    height: auto;
+}
+/* 두번때 블럭 */
+.container02{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5e8;
+    padding: 20px 130px 20px 290px;
+}
+.container02 .left-section{
+    width: 70%; 
+}
+.container02 .right-section02{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container02 h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.container02 .title{
+    color: #ff6d6d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.container02 .info{
+    font-size: 20px;
+    color: #6c7a89;
+    line-height: 1.6;
+}
+.container02 .info p{
+    display: block;
+    margin-bottom: 10px;
+}
+.container02 .details {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+.container02 .details span {
+    display: block;
+    margin-bottom: 10px;
+}
+.right-section02 img{
+    width: 100%;
+    height: auto;
+}
+/* footer */
+#footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5e8;
+    margin: 100px 100px;
+}
+#footer img{
+    width: 70%; height: auto;
 }
