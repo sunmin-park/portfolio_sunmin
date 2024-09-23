@@ -253,113 +253,19 @@ header span {
     z-index: 4;
 }
 /* 7page end */
-.container01{
+.container01, .container02{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5f5e8;
-    padding: 20px 300px;
-}
-.container01 .left-section{
-    width: 50%; 
-}
-.container01 h1{
-    font-size: 30px;
-    font-weight: bold;
-}
-.container01 .title{
-    color: #ff6d6d;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 10px 0 10px 20px;
-}
-.container01 .info{
-    font-size: 20px;
-    color: #6c7a89;
-    line-height: 1.6;
-}
-.container01 .info p{
-    display: block;
-    margin-left: 30px;
-}
-.container01 .right-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container01 .details {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #4a4a4a;
-    line-height: 1.6;
-    margin-left: 20px;
-}
-.container01 .details span {
-    display: block;
-    margin-bottom: 10px;
-}
-.right-section01 img{
-    width: 100%;
-    height: auto;
-}
-/* 두번때 블럭 */
-.container02{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f5f5e8;
-    padding: 20px 130px 20px 290px;
-}
-.container02 .left-section{
-    width: 70%; 
-}
-.container02 .right-section02{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container02 h1{
-    font-size: 30px;
-    font-weight: bold;
-}
-.container02 .title{
-    color: #ff6d6d;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.container02 .info{
-    font-size: 20px;
-    color: #6c7a89;
-    line-height: 1.6;
-}
-.container02 .info p{
-    display: block;
-    margin-bottom: 10px;
-}
-.container02 .details {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #4a4a4a;
-    line-height: 1.6;
-}
-.container02 .details span {
-    display: block;
-    margin-bottom: 10px;
-}
-.right-section02 img{
-    width: 100%;
-    height: auto;
 }
 /* footer */
 #footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     background-color: #f5f5e8;
     margin: 100px 100px;
 }
 #footer img{
-    width: 70%; height: auto;
-}
+    display: block;
+    text-align: center;
+    width: 100%; height: auto;
